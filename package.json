@@ -5,7 +5,8 @@
   "main": "./react_gantt/index.js",
   "scripts": {
     "build": "babel src -d react_gantt",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "browser-sync start --server 'docs' --files 'docs/**/*'"
   },
   "repository": {
     "type": "git",
@@ -57,5 +58,8 @@
     "stylelint-config-standard": "^11.0.0",
     "url-loader": "^0.5.7",
     "style-loader": "^0.13.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.18.8"
   }
 }

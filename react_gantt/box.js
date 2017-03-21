@@ -40,7 +40,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var debug = false;
 
-var Box = function (_React$Component) {
+var Box = (function (_React$Component) {
   (0, _inherits3.default)(Box, _React$Component);
 
   function Box() {
@@ -82,7 +82,7 @@ var Box = function (_React$Component) {
     }
   }]);
   return Box;
-}(_react2.default.Component);
+})(_react2.default.Component);
 
 ;
 

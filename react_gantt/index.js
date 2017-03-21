@@ -63,7 +63,7 @@ var createDays = function createDays(from, to) {
 
   var data = [];
   var i = from;
-  var tmp = void 0;
+  var tmp = undefined;
   while (i < to) {
     tmp = { from: i, customClass: cls };
     i = new Date(i);
@@ -80,7 +80,7 @@ var createWeekDays = function createWeekDays(from, to) {
 
   var data = [];
   var i = from;
-  var tmp = void 0;
+  var tmp = undefined;
   while (i < to) {
     tmp = { from: i, customClass: cls };
     i = new Date(i);
@@ -98,7 +98,7 @@ var createWeeks = function createWeeks(from, to) {
   var data = [];
   var i = new Date(from);
   i = i.setDate(i.getDate() - i.getDay(), 0, 0, 0);
-  var tmp = void 0;
+  var tmp = undefined;
   while (i < to) {
     tmp = { from: i, customClass: cls };
     i = new Date(i);
@@ -116,7 +116,7 @@ var createMonths = function createMonths(from, to) {
   var data = [];
   var i = new Date(from);
   i = i.setDate(1, 0, 0, 0);
-  var tmp = void 0;
+  var tmp = undefined;
   while (i < to) {
     tmp = { from: i, customClass: cls };
     i = new Date(i);
@@ -135,7 +135,7 @@ var createYears = function createYears(from, to) {
   var i = new Date(from);
   i.setMonth(0, 1, 0, 0, 0);
   i = i.getTime();
-  var tmp = void 0;
+  var tmp = undefined;
   while (i < to) {
     tmp = { from: i, customClass: cls };
     i = new Date(i);
@@ -167,7 +167,7 @@ var Time = {
 
 var Zooms = ['day', 'week', 'month'];
 
-var Gantt = function (_React$Component) {
+var Gantt = (function (_React$Component) {
   (0, _inherits3.default)(Gantt, _React$Component);
 
   function Gantt() {
@@ -199,17 +199,16 @@ var Gantt = function (_React$Component) {
     key: 'render',
     value: function render() {
       var props = (0, _extends3.default)({}, this.props, { setZoom: this.setZoom.bind(this) });
-      var k = void 0,
-          start = void 0,
-          stop = void 0,
-          cells = void 0,
-          width = void 0,
-          space = void 0;
+      var k = undefined,
+          start = undefined,
+          stop = undefined,
+          cells = undefined,
+          width = undefined,
+          space = undefined;
       var data = [];
 
       var cell = props.cell,
           zoom = props.zoom;
-
 
       switch (Zooms[this.state.zoom]) {
         case 'month':
@@ -281,7 +280,7 @@ var Gantt = function (_React$Component) {
     }
   }]);
   return Gantt;
-}(_react2.default.Component);
+})(_react2.default.Component);
 
 ;
 

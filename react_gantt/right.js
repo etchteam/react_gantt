@@ -77,7 +77,7 @@ function _applyDecoratedDescriptor(target, property, decorators, descriptor, con
   return desc;
 }
 
-var Right = (_dec = (0, _reactKeydown2.default)('='), _dec2 = (0, _reactKeydown2.default)('-'), (_class = function (_React$Component) {
+var Right = (_dec = (0, _reactKeydown2.default)('='), _dec2 = (0, _reactKeydown2.default)('-'), (_class = (function (_React$Component) {
   (0, _inherits3.default)(Right, _React$Component);
 
   function Right(props) {
@@ -119,7 +119,7 @@ var Right = (_dec = (0, _reactKeydown2.default)('='), _dec2 = (0, _reactKeydown2
     }
   }]);
   return Right;
-}(_react2.default.Component), (_applyDecoratedDescriptor(_class.prototype, 'handlePlus', [_dec], (0, _getOwnPropertyDescriptor2.default)(_class.prototype, 'handlePlus'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'handleMinus', [_dec2], (0, _getOwnPropertyDescriptor2.default)(_class.prototype, 'handleMinus'), _class.prototype)), _class));
+})(_react2.default.Component), (_applyDecoratedDescriptor(_class.prototype, 'handlePlus', [_dec], (0, _getOwnPropertyDescriptor2.default)(_class.prototype, 'handlePlus'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'handleMinus', [_dec2], (0, _getOwnPropertyDescriptor2.default)(_class.prototype, 'handleMinus'), _class.prototype)), _class));
 ;
 
 exports.default = Right;

@@ -7,9 +7,15 @@ Many thanks to http://taitems.github.io/jQuery.Gantt/
 
 demo based [React Static Boilerplate](https://github.com/kriasoft/react-static-boilerplate)
 
+## Install
+
+```
+npm install react_gantt --save
+```
+
 ## Use
 ```
-import Gantt from '../components/react_gantt';
+import Gantt from 'react_gantt';
 ...
 
 return (<Gantt {...{
@@ -25,6 +31,6 @@ return (<Gantt {...{
       "customClass": "ganttRed"
     }]
     ]
-  }} 
+  }}
 />);
 ```
